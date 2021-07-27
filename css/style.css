@@ -344,7 +344,7 @@ section{
     padding: 2rem;
     
   }
-  input{
+  input,textarea{
     padding: 0.8rem 1rem;
     margin: 1rem!important;
     border-radius: 8px;
