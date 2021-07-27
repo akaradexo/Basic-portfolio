@@ -111,10 +111,51 @@ body {
 }
 
 
-
 .topbar .toggle{
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
     position: relative;
+}   
+
+
+.profile{
+    width: 100%;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 220px 0;
+}
+.content .title{
+    padding: 4rem;
+}
+.content .title a{
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.content img{
+    width: 350px;
+    height: 350px;
+    border-radius: 350px;
+}
+
+.about{
+
+}
+.about .me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 160px 0;
+}
+
+.about .me p {
+    font-size: 2rem;
+    font-weight: 2rem;
+    padding: 0 7rem;
 }   
