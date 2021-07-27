@@ -194,6 +194,11 @@ section{
     align-items: center;
     width: 100%;
 }
+.about .me h1{
+    font-size: 4rem;
+    font-weight: 4rem;
+
+}
 .about .me a{
     text-decoration: none;
 
@@ -211,14 +216,25 @@ section{
     align-items: center;
     width: 100%;
 }
+.education h1{
+    font-size: 4rem;
+    font-weight: 4rem;
+}
 .edu-card{
     background-color: white;
-    margin: 2rem;
+    margin: 1rem;
     padding: 2rem;
     border-radius: 2rem;
     width: 400px;
 }
 .projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     flex-direction: row;
@@ -226,11 +242,14 @@ section{
     align-items: center;
     width: 100%;
 }
+.projects h1{
+    font-size: 4rem;
+    font-weight: 4rem;
+}
 .pro-cards{
     background-color: white;
-    margin:auto;
+    margin:2rem;
     padding: 2rem;
-    margin: auto;
     border-radius: 2rem;
     width: 300px;
     height: 200px;
@@ -240,14 +259,26 @@ section{
    justify-content: start;
 }
 .skills{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
-.icons{
-    background-color: white;
-    margin:auto;
+.skills h1{
+    font-size: 4rem;
+    font-weight: 4rem;
     padding: 2rem;
-    margin: auto;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin:2rem;
+    padding: 2rem;
     border-radius: 2rem;
 }
 
@@ -321,6 +352,7 @@ section{
     border: 0.1111rem solid white;
     color: black;
     font-weight: 800;
+    width: 500px;
   }
   button{
     padding: 0.3rem 2rem;
