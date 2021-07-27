@@ -18,26 +18,36 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #d9d9d9;
-  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+  
   margin: 0;
   color: black;
 }
-
+.btn{
+    padding: 0.3rem 0.4rem;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
 .container{
     position: relative;
     width: 100%;
 }
 
 .navigation{
-    display: flex;
     position: fixed;
-    justify-content: center;
-    align-items: center;
     width: 300px;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     transition: width 0.5s;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: #d9d9d9;
+    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+
 }
 .navigation.active{
     width: 0;
@@ -80,8 +90,15 @@ body {
     width: calc(100% - 300px);
     left: 300px;
     min-height: 100vh;
-    top: 0;
+    transition: width 0.5s,left 0.5s;
+    background-color: #d9d9d9;
+  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
 
+}
+
+.main.active{
+    width: calc(100% - 0px);
+    left: 0;
 }
 
 .topbar{
@@ -91,14 +108,18 @@ body {
     left: 300px;
     display: flex;
     justify-content: space-between;
-    z-index: 1000;
-    padding: 2rem 4rem;
     align-items: center;
+    z-index: 1000;
+    padding: 1rem 4rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: width 0.5s,left 0.5s;
+    background-color: #d9d9d9;
+    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
 }
 
-.topbar .active{
+.topbar.active{
     width: calc(100% - 0px);
-    left: 0px;
+    left: 0;
 }
 
 .topbar .logo{
@@ -112,22 +133,31 @@ body {
 
 
 .topbar .toggle{
+    position: relative;
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }   
 
+section{
+    position: relative;
+    min-height: 100vh;
+}
 
 .profile{
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .content{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 220px 0;
 }
 .content .title{
     padding: 4rem;
@@ -136,12 +166,7 @@ body {
 .content .title a{
     text-decoration: none;
     cursor: pointer;
-    padding: 0.3rem 0.2rem;
-    border-radius: 10px;
-    border: none;
-    background-color: white;
-    color: #000;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+   
 }
 .content .title h3{
     font-size: 4rem;
@@ -158,16 +183,21 @@ body {
 }
 
 .about{
-
-}
-.about .me{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin: 160px 0;
 }
+.about .me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.about .me a{
+    text-decoration: none;
 
+}
 .about .me p {
     font-size: 2rem;
     font-weight: 2rem;
@@ -180,7 +210,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 100px 0;
 }
 .edu-card{
     background-color: white;
@@ -196,12 +225,12 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 160px 0;
 }
 .pro-cards{
     background-color: white;
-    margin: 2rem;
+    margin:auto;
     padding: 2rem;
+    margin: auto;
     border-radius: 2rem;
     width: 300px;
     height: 200px;
@@ -210,3 +239,111 @@ body {
    display: flex;
    justify-content: start;
 }
+.skills{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.icons{
+    background-color: white;
+    margin:auto;
+    padding: 2rem;
+    margin: auto;
+    border-radius: 2rem;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact h1{
+    font-size: 4rem;
+    font-weight: 4rem;
+}
+
+
+.message{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+  }
+
+ 
+  
+  .thing{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+    padding:0 5rem ;
+    width: 100%;
+  }
+  .thing h2{
+    font-size: 2.3rem;
+    padding-bottom: 4rem;
+  }
+  .thing h3{
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .thing p{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+  }
+  .thing p a{
+    background-color: white;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    color: black;
+  
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    
+  }
+  input{
+    padding: 0.8rem 1rem;
+    margin: 1rem!important;
+    border-radius: 8px;
+    background-color: white;
+    border: 0.1111rem solid white;
+    color: black;
+    font-weight: 800;
+  }
+  button{
+    padding: 0.3rem 2rem;
+    border-radius: 10px;
+    border: none;
+    margin: 2rem;
+    background-color: white;
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  }
+  button:hover{
+      opacity: 0.8;
+  }
+
+  .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .social a{
+      color: black;
+      font-size: 10rem;
+      padding: 2rem;
+  }

@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <div class="container">
         <div class="navigation">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Socials</a></li>
+                <li><a href="#profile">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#social">Socials</a></li>
             </ul>
         </div>
         <div class="main">
@@ -29,24 +29,26 @@
                     <i class="fas fa-bars" aria-hidden="true"></i>
                 </div>
             </div>
-            <section class="profile">
+            <section class="profile" id="profile">
                 <div class="content">
                     <img src="./assests/profile.jpg" alt="">
                     <div class="title">
                         <h3>Ashutosh Karade</h3>
                         <p>I'm a Creative Web Developer.</p>
-                        <a href="./assests/ashutoshkarade-resume.pdf">View Resume 👀</a>
+                        <a href="./assests/ashutoshkarade-resume.pdf" class="btn">View Resume 👀</a>
                     </div>
                 </div>
             </section>
-            <section class="about">
+            <section class="about" id="about">
                 <div class="me">
                     <p>
                         Hello, My name is Ashutosh Karade,I'm properly from Nagpur. I'm 21 year old and I'm in the final year of computer science engineering from PIGCE, in my family member their are only three member including me my father and my mother both retired my strength is that I am creative,well-organized worker with positive attitude towards my career and my life. coming to my weekness i get the work done even if i am sick.My short-term goal is to get an entry-level position to begin my career in a high-level professional environment. My long-term goal is to become a responsible & knowledgeable personality & in a respected position in my company. My hobbies are spending time with friends & video gaming and that's all about me .💞️
                     </p>
+                    <br>
+                    <a href="./assests/ashutoshkarade-resume.pdf" class="btn">Download my Resume</a>
                 </div>
             </section>
-            <section class="education">
+            <section class="education" id="education">
                 <div class="edu-card">
                     <h2>Bachelor of Engineering</h2>
                     <p>Priyadarshini Indira Gandhi
@@ -66,7 +68,8 @@
                     <p>2015</p>
                 </div>
             </section>
-            <section class="projects">
+           
+            <section class="projects" id="projects">
                 <div class="pro-cards">
                     <h2>Scrunchies - shop</h2>
                     <h5>Created fully functional eCommerce application using commerce.js.
@@ -97,8 +100,57 @@
                     <h5>It a web-based platform which provide employment to Daily wages worker.
                     </h5>
                     <footer> <a href="https://drive.google.com/file/d/1AH7ez_NK_EqX4acuSnUGSbuWj1ItpwwP/view?usp=sharing">See Project</a></footer>
-                   
                 </div>
+            </section>
+            <section class="skills" id="skills">
+                <h1 class="icons">
+                    <i class="fab fa-html5"> </i>HTML 5
+                </h1>
+                <h1 class="icons">
+                    <i class="fab fa-css3-alt"></i>CSS 3
+                </h1>
+                <h1 class="icons">
+                    <i class="fab fa-js-square"></i>JavaScript
+                </h1>
+                <h1 class="icons">
+                    <i class="fab fa-react"></i>React.js
+                </h1>
+                <h1 class="icons">
+                    <i class="fab fa-uikit"></i>UI
+                </h1>
+                <h1 class="icons">
+                    <i class="fab fa-python"></i>Python
+                </h1> 
+                <h1 class="icons">
+                    <i class="fab fa-git"></i>GIT
+                </h1>
+                <h1 class="icons">
+                    <i class="fas fa-code"></i>C,C++
+                </h1>
+            </section>
+            <section class="contact" id="contact">
+                
+                <h1>NEVER MISS A THING</h1>
+                <div className="message">
+                    <div className="thing">
+                        <h2>I'D LOVE TO HEAR FROM YOU</h2>
+                        <br></br>
+                        <h3>FOR BUSINESS INQUIRIES</h3>
+                        <p><a href="infoashu.k@gmail.com">infoashu.k@gmail.com</a></p>
+                        <p>@ 2023 by Ashyou. make sure you follow me on Instagram</p>
+                    </div>
+                    <form>
+                        <input type="text" placeholder="Name" name="from_name"></input>
+                        <input type="Email" placeholder="Email" name="email"></input>
+                        <input type="text" placeholder="Type your message here..." name="message"></input>
+                        <button type="submit" >Submit</button>
+                    </form>
+                </div>
+               
+            </section>
+            <section class="social" id="social">
+                <a href="https://www.linkedin.com/in/ashutosh-karade-0194521a2/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/xR0v3Rx"><i class="fab fa-github-square"></i></a>
             </section>
         </div>
     </div>
