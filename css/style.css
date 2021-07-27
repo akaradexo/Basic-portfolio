@@ -131,11 +131,25 @@ body {
 }
 .content .title{
     padding: 4rem;
+    line-height: 3rem;
 }
 .content .title a{
     text-decoration: none;
     cursor: pointer;
-    
+    padding: 0.3rem 0.2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.content .title h3{
+    font-size: 4rem;
+    font-weight: 4rem;
+}
+.content .title p{
+    font-size: 1.5rem;
+    font-weight: 1.5rem;
 }
 .content img{
     width: 350px;
@@ -159,3 +173,40 @@ body {
     font-weight: 2rem;
     padding: 0 7rem;
 }   
+
+.education{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 100px 0;
+}
+.edu-card{
+    background-color: white;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 400px;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 160px 0;
+}
+.pro-cards{
+    background-color: white;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 300px;
+    height: 200px;
+}
+.pro-cards a{
+   display: flex;
+   justify-content: start;
+}
