@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 :root{
-    --black1: #383838;
-    --black2: #202124;
+    --black1: #181818;
+    --black2: #202020;
     --white1: #d9d9d9;
 }
 
@@ -11,26 +11,40 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+*::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #f6f2f2;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #202020;
+    border-radius: 20px;
+  }
 html {
   font-size: 14px;
 }
-
+a{
+    text-decoration: none;
+    color: blue;
+}
 body {
   font-family: 'Poppins', sans-serif;
   
   margin: 0;
-  color: black;
+  color: #202020;
 }
 .btn{
     padding: 0.3rem 0.4rem;
     border-radius: 10px;
     border: none;
     background-color: white;
-    color: #000;
+    color: #202020;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
-.container{
+.container-1{
     position: relative;
     width: 100%;
 }
@@ -72,7 +86,7 @@ body {
     display: block;
     width: 100%;
     display: flex;
-    color: #1f1f1f;   
+    color: #202020;   
     text-decoration: none;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
@@ -123,7 +137,7 @@ body {
 }
 
 .topbar .logo{
-    color: black;
+    color: #202020;
     text-decoration: none;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
@@ -222,10 +236,11 @@ section{
 }
 .edu-card{
     background-color: white;
-    margin: 1rem;
-    padding: 2rem;
+    margin: auto;
+    padding: 3rem;
     border-radius: 2rem;
-    width: 400px;
+    width: 450px;
+    height: 150px;
 }
 .projects{
     display: flex;
@@ -333,7 +348,7 @@ section{
     background-color: white;
     border-radius: 20px;
     padding: 0.5rem 1rem;
-    color: black;
+    color: #202020;
   
   }
   form{
@@ -350,7 +365,7 @@ section{
     border-radius: 8px;
     background-color: white;
     border: 0.1111rem solid white;
-    color: black;
+    color: #202020;
     font-weight: 800;
     width: 500px;
   }
@@ -360,7 +375,7 @@ section{
     border: none;
     margin: 2rem;
     background-color: white;
-    color: #000;
+    color: #202020;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   }
   button:hover{
@@ -375,8 +390,8 @@ section{
     width: 100%;
   }
   .social a{
-      color: black;
+      color: #202020;
       font-size: 10rem;
-      padding: 2rem;
+      margin: 2rem;
   }
   

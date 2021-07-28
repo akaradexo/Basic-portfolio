@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./assests/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/nslider.css" />
+    <link rel="stylesheet" href="./css/carousel.css" />
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container-1">
         <div class="navigation">
             <ul>
                 <li><a href="#profile">Home</a></li>
@@ -52,29 +54,43 @@
             </section>
             <section class="education" id="education">
                 <h1>Education</h1>
-                <div class="edu-card">
-                    <h2>Bachelor of Engineering</h2>
-                    <p>Priyadarshini Indira Gandhi
-                        College of Engineering</p>
-                    <p>2017-2021</p>
-                </div>
-                <div class="edu-card">
-                    <h2>HSC</h2>
-                    <p>Nandhavan Arts Commerce
-                        Science Junior College</p>
-                    <p>2017</p>
-                </div>
-                <div class="edu-card">
-                    <h2>SSC</h2>
-                    <p>Kurvey’s New Modal public
-                        school</p>
-                    <p>2015</p>
+                <div class="container">
+                    <div class="nslider">
+                        <div class="nslider-wrapper">
+                            <div class="nslider-slide" id="slide-1">
+                                <div class="edu-card">
+                                    <h2>Bachelor of Engineering</h2>
+                                    <p>Priyadarshini Indira Gandhi
+                                        College of Engineering</p>
+                                    <p>2017-2021</p>
+                                </div>
+                            </div>
+                            <div class="nslider-slide" id="slide-2">
+                                <div class="edu-card">
+                                    <h2>HSC(12th)</h2>
+                                    <p>Nandhavan Arts Commerce
+                                        Science Junior College</p>
+                                    <p>2017</p>
+                                </div>
+                            </div>
+                            <div class="nslider-slide" id="slide-3">
+                                <div class="edu-card">
+                                    <h2>SSC(10th)</h2>
+                                    <p>Kurvey’s New Modal public
+                                        school</p>
+                                    <p>2015</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nslider-button nslider-button-prev"></div>
+                        <div class="nslider-button nslider-button-next"></div>
+                    </div>
                 </div>
             </section>
            
             <section class="projects" id="projects">
                 <h1>Projects</h1>
-                <div class="cards">
+                <!-- <div class="cards">
                     <div class="pro-cards">
                         <h2>Scrunchies - shop</h2>
                         <br>
@@ -111,7 +127,67 @@
                         </h5>
                         <footer> <a href="https://drive.google.com/file/d/1AH7ez_NK_EqX4acuSnUGSbuWj1ItpwwP/view?usp=sharing">See Project</a></footer>
                     </div>
-                </div>
+                </div> -->
+                <div class="container-2">
+    
+    
+                    <input hidden type="radio" name="carousel-control" id="button_a" checked/>
+                    <input hidden type="radio" name="carousel-control" id="button_b"/>
+                    <input hidden type="radio" name="carousel-control" id="button_c"/>
+                    <input hidden type="radio" name="carousel-control" id="button_d"/> 
+                    <input hidden type="radio" name="carousel-control" id="button_e"/>           
+                            
+                    <div id="navigation">
+                        <label for="button_a" class="label_a"> <span>Scrunchies - shop</span> </label>
+                        <label for="button_b" class="label_b"> <span>RPSLS - game</span> </label>
+                        <label for="button_c" class="label_c"> <span>Notepad app</span> </label>
+                        <label for="button_d" class="label_d"> <span>Social Portfolio</span> </label>
+                        <label for="button_e" class="label_e"> <span>KarmVyaapaar</span> </label>
+                    </div> <!-- // #navigation -->   
+                    <div id="carousel">
+                        <div class="p-wrapper">
+                                    
+                            <div class="panel_a">
+                                <h2>Scrunchies - shop</h2>
+                                <br>
+                                <p>Created fully functional eCommerce application using commerce.js.</p>
+                                <p>Currently Working</p>
+                                <a href="https://carino-shop.netlify.app/"><h2>Link to Project <i class="fas fa-globe"></i></h2></a>
+                            </div>
+                                    
+                            <div class="panel_b">
+                                <h2>RPSLS - game</h2>
+                                <br>
+                                <p>Rock, Paper, Scissors, Lizard, Spock with Rule book</p>
+                                <a href="https://rpsls-5-game.netlify.app/"><h2>Link to Project <i class="fas fa-globe"></i></h2></a>
+                            </div>
+                                    
+                            <div class="panel_c">
+                                <h2>Notepad app</h2>
+                                <br>
+                                <p>Notepad app with dark and light themes
+                                </p>
+                                <a href="https://notepad-qoq.netlify.app/"><h2>Link to Project <i class="fas fa-globe"></i></h2></a>
+                            </div>
+                                    
+                            <div class="panel_d">
+                                <h2>Social Portfolio</h2>
+                                <br>
+                                <p>Created fully functional social portfolio of my instagram.
+                                </p>
+                                <a href="https://portfolio-ashyou.herokuapp.com/"><h2>Link to Project <i class="fas fa-globe"></i></h2></a>
+                            </div>
+                            <div class="panel_e">
+                                <h2>KarmVyaapaar</h2>
+                                <br>
+                                <p>It a web-based platform which provide employment to Daily wages worker.
+                                </p>
+                                 <a href="https://drive.google.com/file/d/1AH7ez_NK_EqX4acuSnUGSbuWj1ItpwwP/view?usp=sharing"><h2>Link to Project <i class="fas fa-globe"></i></h2></a>
+                            </div>
+                                    
+                        </div> <!-- // .p-wrapper -->
+                    </div> <!-- // #carousel -->
+                </div> 
                
             </section>
             <section class="skills" id="skills">
@@ -172,5 +248,29 @@
     </div>
     
 </body>
+<script src="./js/nslider.js"></script>
 <script src="./js/script.js"></script>
+<script>
+    const slider = new NSlider({ // Only 'elem' key required.
+        elem: document.querySelector('.container'), // A parent element of the slider
+        // NOTE: The specified parent element can have only 1 NSlider.
+        
+        // animation: true, // Animation opens with default settings
+        
+        animation: { // Custom Animation Options
+             duration: 1000, // Milliseconds
+             timingFunction: 'ease-in' // CSS's animation timing functions
+        },
+        
+        keyboardControl: true, // Slider can be controlled with right and left arrows
+        // currentSlide: 2, // Current slide index. It starts from 0 because it is in array logic
+        // prevButtonInner: '<', // Custom "previous" button content
+        // nextButtonInner: '>', // Custom "next" button content
+        dots: true, // Dots as the number of slides below the slider
+    });
+    
+    // Optional
+    setInterval(() => slider.next(), 5000); // Every 5 seconds the slider automatically moves to the next slide
+    // setInterval(() => slider.prev(), 5000); // Every 5 seconds the slider automatically moves to the previous slide
+</script>
 </html>
