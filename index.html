@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./assests/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/nslider.css" />
+    <!-- <link rel="stylesheet" href="./css/nslider.css" /> -->
     <link rel="stylesheet" href="./css/carousel.css" />
     <title>Portfolio</title>
 </head>
@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="#profile">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
+                <!-- <li><a href="#education">Education</a></li> -->
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -35,26 +35,26 @@
             <section class="profile" id="profile">
                 <div class="content">
                     <img src="./assests/profile.jpg" alt="">
-                    <div class="title">
+                    <div class="name">
                         <h3>Ashutosh Karade</h3>
                         <p>I'm a Creative Web Developer.</p>
                         
+                    <a href="./assests/ashutoshkarade-resume.pdf" class="btn">View Resume 👀</a>
                     </div>
                 </div>
             </section>
             <section class="about" id="about">
                 <div class="me">
-                    <h1>About</h1>
-                    
+                    <div class="title"><h1>About</h1></div>
+                    <h2>Let me introduce myself.</h2>
                     <p>
-                        Hello, My name is Ashutosh Karade,I'm properly from Nagpur. I'm 21 year old and I'm in the final year of computer science engineering from PIGCE, in my family member their are only three member including me my father and my mother both retired my strength is that I am creative,well-organized worker with positive attitude towards my career and my life. coming to my weekness i get the work done even if i am sick.My short-term goal is to get an entry-level position to begin my career in a high-level professional environment. My long-term goal is to become a responsible & knowledgeable personality & in a respected position in my company. My hobbies are spending time with friends & video gaming and that's all about me .💞️
+                        Hello, My name is Ashutosh Karade,I'm properly from Nagpur. I'm 21 year old and I'm in the final year of computer science engineering from PIGCE, in my family member their are only three member including me my father and my mother both retired my strength is that I am creative,well-organized worker with positive attitude towards my career and my life. coming to my weekness i get the work done even if i am sick.My short-term goal is to get an entry-level position to begin my career in a high-level professional environment. My long-term goal is to become a responsible & knowledgeable personality & in a respected position in my company. My hobbies are spending time with friends & video gaming and that's all about me.
                     </p>
                     <br>
-                    <a href="./assests/ashutoshkarade-resume.pdf" class="btn">View Resume 👀</a>
                     <!-- <a href="./assests/ashutoshkarade-resume.pdf" class="btn">Download my Resume</a> -->
                 </div>
             </section>
-            <section class="education" id="education">
+            <!-- <section class="education" id="education">
                 <h1>Education</h1>
                 <div class="container">
                     <div class="nslider">
@@ -88,10 +88,9 @@
                         <div class="nslider-button nslider-button-next"></div>
                     </div>
                 </div>
-            </section>
-           
+            </section> -->
             <section class="projects" id="projects">
-                <h1>Projects</h1>
+                <div class="title"><h1>Projects</h1></div>
                 <div class="container-2">
                     <input hidden type="radio" name="carousel-control" id="button_a" checked/>
                     <input hidden type="radio" name="carousel-control" id="button_b"/>
@@ -109,7 +108,6 @@
                         <label for="button_b" class="label_b"> <span>RPSLS - game</span> </label>
                         <label for="button_c" class="label_c"> <span>Notepad app</span> </label>
                         <label for="button_d" class="label_d"> <span>Scrunchies - shop</span> </label>
-
                         <label for="button_e" class="label_e"> <span>KarmVyaapaar</span> </label>
                         <label for="button_f" class="label_f"> <span>Pay to Park</span> </label>
                         <label for="button_g" class="label_g"> <span>Weather</span> </label>
@@ -120,56 +118,59 @@
                         <div class="p-wrapper">      
                             <div class="panel_a">
                                 <h2>Social Portfolio</h2>
-                                <br>
                                 <p>Created fully functional social portfolio of my instagram.
                                 </p>
+                                <h3>Technologies used: React,Html,Css,JavaScript </h3>
                                 <a href="https://portfolio-ashyou.herokuapp.com/"><h2>Link to Project <i class="fas fa-globe"></i></h2></a>
-                                <img style="height: auto; width: 500px;" src="./assests/social 1.png"/>
-                                <img style="height: auto; width: 500px;" src="./assests/social 2.png"/>
-                                <img style="height: auto; width: 500px;" src="./assests/social 3.png"/>
-                                <img style="height: auto; width: 500px;" src="./assests/social 4.png"/>
-                                <img style="height: auto; width: 500px;" src="./assests/social 5.png"/>
-                            </div>
-                                    
+                                <img  src="./assests/social 1.png"/>
+                                <img src="./assests/social 2.png"/>
+                                <img src="./assests/social 3.png"/>
+                                <img src="./assests/social 4.png"/>
+                                <img src="./assests/social 5.png"/>
+                            </div>   
                             <div class="panel_b">
                                 <h2>RPSLS - game</h2>
-                                <br>
                                 <p>Rock, Paper, Scissors, Lizard, Spock with Rule book</p>
+                                <h3>Technologies used: Html,Css,JavaScript</h3>
                                 <a href="https://rpsls-5-game.netlify.app/"><h2>Link to Project <i class="fas fa-globe"></i></h2></a>
-                                <img style="height: auto; width: 500px;" src="./assests/rpsls.png"/>
-                            </div>
-                                    
+                                <img src="./assests/rpsls.png"/>
+                            </div>   
                             <div class="panel_c">
                                 <h2>Notepad app</h2>
-                                <br>
                                 <p>Notepad app with dark and light themes
                                 </p>
+                                <h3>Technologies used: React,Html,Css,JavaScript</h3>
                                 <a href="https://notepad-qoq.netlify.app/"><h2>Link to Project <i class="fas fa-globe"></i></h2></a>
-                                <img style="height: auto; width: 500px;" src="./assests/notedpad.png"/>
+                                <img src="./assests/notedpad.png"/>
                             </div>
                             <div class="panel_d">
                                 <h2>Scrunchies - shop</h2>
-                                <br>
-                                <p>Created fully functional eCommerce application using commerce.js.</p>
-                                <p>Currently Working</p>
+                                <p>Created fully functional eCommerce application using commerce.js.
+                                         
+                                • Chec/Commerce. js is an API-first eCommerce platform geared towards developers, designers, and businesses to create custom eCommerce experiences on, web, mobile, and beyond 
+                                • use of stripe.js for online payment 
+                                • material ui 
+                                </p>
+                                <h3>Technologies used: React,Html,Css,JavaScript   
+                                </h3>
+                                <strong style="color: green;">Currently Working</strong>
                                 <a href="https://carino-shop.netlify.app/"><h2>Link to Project <i class="fas fa-globe"></i></h2></a>
-                                <img style="height: auto; width: 500px;" src="./assests/carino.png"/>
+                                <img src="./assests/carino.png"/>
                             </div>        
                             
                             <div class="panel_e">
                                 <h2>KarmVyaapaar (Web Application)</h2>
-                                <br>
                                 <p> The KarmVyaapaar is a web application which
                                     provides the interface between the worker and the employer. Looking to the current
                                     situation due to this COVID-19 Pandemic many people have lost their jobs and it has
                                     affected mainly small traders and daily-wage workers.
                                 </p>
+                                <h3>Technologies used:Html,Css,JavaScript,Bootstrap   </h3>
                                  <a href="https://drive.google.com/file/d/1AH7ez_NK_EqX4acuSnUGSbuWj1ItpwwP/view?usp=sharing"><h2>Link to Project <i class="fas fa-globe"></i></h2></a>
-                                 <img style="height: auto; width: 500px;" src="./assests/Karmavyaapar ui.png"/>
+                                 <img src="./assests/Karmavyaapar ui.png"/>
                             </div>
                             <div class="panel_f">
                                 <h2>Pay to park Application (Android Application and IOT)</h2>
-                                <br>
                                 <p>IOT based smart parking
                                     system has been proposed which integrates several physical devices to check the parking
                                     slot availability. Mobile app allows the user to locate and reserve a parking slot in online,
@@ -177,35 +178,34 @@
                                     reduces the driver's effort and time to search parking space and the face recognition to
                                     provide security.
                                 </p>
+                                <h3>Technologies used: Android studio</h3>
                                 <a href="https://drive.google.com/file/d/1VMZuhBz6X5D0JJy4EEYwZadcLHb76yXN/view?usp=sharing"><h2>Link to Project <i class="fas fa-globe"></i></h2></a>
-                                <img style="height: 400px; width: auto;" src="./assests/p2p 1.jpeg"/>
-                                <img style="height: 400px; width: auto;" src="./assests/p2p 2.jpeg"/>
-                                <img style="height: 400px; width: auto;" src="./assests/p2p 3.jpeg"/>
-                                <img style="height: 400px; width: auto;" src="./assests/p2p 4.jpeg"/>
+                                <img src="./assests/pay2park.png"/>
+                              
                             </div>
                             <div class="panel_g">
                                 <h2>Weather-app</h2>
-                                <br>
-                                <p> React.js / api
+                                <p>Shows you weather
                                 </p>
+                                <h3>Technologies used: React,Html,Css,JavaScript,API   </h3>
                                  <a href="https://weather-app-qop.herokuapp.com/"><h2>Link to Project <i class="fas fa-globe"></i></h2></a>
-                                 <img style="height: 400px; width: auto;" src="./assests/weather.png"/>
+                                 <img src="./assests/weather.png"/>
                             </div>
                             <div class="panel_h">
                                 <h2>Expense-tracker</h2>
-                                <br>
-                                <p>Tracking Expenses
+                                <p>Calculate your expense
                                 </p>
+                                <h3>Technologies used: React,Html,Css,JavaScript   </h3>
                                  <a href="https://expense-tracker-qop.netlify.app/"><h2>Link to Project <i class="fas fa-globe"></i></h2></a>
-                                 <img style="height: auto; width: 500px;" src="./assests/exxpense.png"/>
+                                 <img src="./assests/exxpense.png"/>
                             </div>
                             <div class="panel_i">
                                 <h2>Burger-Bar</h2>
-                                <br>
-                                <p>React.js / Shopping-Cart.
+                                <p>online burger shop
                                 </p>
+                                <h3>Technologies used: React,Html,Css,JavaScript   </h3>
                                  <a href="http://burger-bar-qop.herokuapp.com/"><h2>Link to Project <i class="fas fa-globe"></i></h2></a>
-                                 <img style="height: auto; width: 500px;" src="./assests/burgershop.png"/><img style="height: auto; width: 500px;" src="./assests/burgercart.png"/>
+                                 <img src="./assests/burgershop.png"/><img src="./assests/burgercart.png"/>
                             </div>
                             <!-- https://drive.google.com/file/d/1IHmzHmMUn-fJVNv-71GUV2iNHRMoJH4j/view?usp=sharing -->
                         </div> <!-- // .p-wrapper -->
@@ -214,45 +214,35 @@
                
             </section>
             <section class="skills" id="skills">
-                <h1>Skills</h1>
-                <div class="cards">
-                    <h2 class="icons">
-                        <i class="fab fa-html5"> </i>HTML 5
-                    </h2>
-                    <h2 class="icons">
-                        <i class="fab fa-css3-alt"></i>CSS 3
-                    </h2>
-                    <h2 class="icons">
-                        <i class="fab fa-js-square"></i>JavaScript
-                    </h2>
-                    <h2 class="icons">
-                        <i class="fab fa-react"></i>React.js
-                    </h2>
-                    <h2 class="icons">
-                        <i class="fab fa-uikit"></i>UI
-                    </h2>
-                    <h2 class="icons">
-                        <i class="fab fa-python"></i>Python
-                    </h2> 
-                    <h2 class="icons">
-                        <i class="fab fa-git"></i>GIT
-                    </h2>
-                    <h2 class="icons">
-                        <i class="fas fa-code"></i>C,C++
-                    </h2>
+                <div class="title"><h1>Skills</h1></div>
+                <div class="skill-container">
+                    <div class="skill-list">
+                        <ul>
+                            <li><p>Html</p> </li>
+                            <li><p>css</p> </li>
+                            <li><p>js</p> </li>
+                            <li><p>react</p> </li>
+                            <li><p>git</p> </li>
+                            <li><p>UI</p> </li>
+                            <li><p>python</p> </li>
+                            <li><p>c/c++</p></li>
+                        </ul>
+                    </div>
+                    <img src="./assests/skills.png" alt="skills-pics">
+
                 </div>
+                
+                
                 
             </section>
             <section class="contact" id="contact">
-                
-                <h1>NEVER MISS A THING</h1>
+                <h1>I'D LOVE TO HEAR FROM YOU</h1>
                 <div className="message">
                     <div className="thing">
-                        <h2>I'D LOVE TO HEAR FROM YOU</h2>
                         <br></br>
                         <h3>FOR BUSINESS INQUIRIES</h3>
                         <p><a href="infoashu.k@gmail.com">infoashu.k@gmail.com</a></p>
-                        <p>@ 2023 by Ashyou. make sure you follow me on Instagram</p>
+                        
                     </div>
                     <form>
                         <input type="text" placeholder="Name" name="from_name"></input>
@@ -264,16 +254,22 @@
                
             </section>
             <section class="social" id="social">
-                <a href="https://www.linkedin.com/in/ashutosh-karade-0194521a2/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/xR0v3Rx"><i class="fab fa-github-square"></i></a>
+                <div class="title"><h1>Socials</h1></div>
+                <a href="https://www.linkedin.com/in/ashutosh-karade-0194521a2/"><img src="./assests/linkedin.png" alt=""></i></a>
+                <a href="https://github.com/xR0v3Rx"><img src="./assests/github.png" alt=""></a>
+                <a href="infoashu.k@gmail.com"><img src="./assests/gmail.png" alt=""></a>
+                <a href="https://www.instagram.com/ashyou._/?hl=en"><img src="./assests/instagram.png" alt=""></a>
+                
+                
+
             </section>
         </div>
     </div>
     
 </body>
-<script src="./js/nslider.js"></script>
+<!-- <script src="./js/nslider.js"></script> -->
 <script src="./js/script.js"></script>
-<script>
+<!-- <script>
     const slider = new NSlider({ // Only 'elem' key required.
         elem: document.querySelector('.container'), // A parent element of the slider
         // NOTE: The specified parent element can have only 1 NSlider.
@@ -295,5 +291,5 @@
     // Optional
     setInterval(() => slider.next(), 5000); // Every 5 seconds the slider automatically moves to the next slide
     // setInterval(() => slider.prev(), 5000); // Every 5 seconds the slider automatically moves to the previous slide
-</script>
+</script> -->
 </html>

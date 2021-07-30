@@ -44,6 +44,9 @@ body {
     color: #202020;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
+.btn:hover{
+    opacity: 0.8;
+}
 .container-1{
     position: relative;
     width: 100%;
@@ -97,6 +100,8 @@ body {
 
 .navigation ul li a:hover{
     opacity: 1;
+    font-weight: 500;
+
 }
 
 .main{
@@ -173,20 +178,20 @@ section{
     align-items: center;
     width: 100%;
 }
-.content .title{
+.content .name{
     padding: 4rem;
     line-height: 3rem;
 }
-.content .title a{
+.content .name a{
     text-decoration: none;
     cursor: pointer;
    
 }
-.content .title h3{
+.content .name h3{
     font-size: 4rem;
     font-weight: 4rem;
 }
-.content .title p{
+.content .name p{
     font-size: 1.5rem;
     font-weight: 1.5rem;
 }
@@ -194,6 +199,7 @@ section{
     width: 350px;
     height: 350px;
     border-radius: 350px;
+    box-shadow: 0px 0px 69px -10px rgb(0 0 0 / 75%);
 }
 
 .about{
@@ -208,9 +214,32 @@ section{
     align-items: center;
     width: 100%;
 }
-.about .me h1{
-    font-size: 4rem;
-    font-weight: 4rem;
+.title{
+    width: 100%;
+    text-align: center;
+}
+.title h1{
+    position: relative;
+    font-size: 3rem;
+    font-weight: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+
+}
+ .title h1::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 100px;
+    height: 1px;
+    background-color: var(--black2);
+}
+
+.about .me h2{
+    font-size: 2rem;
+    font-weight: 500;
 
 }
 .about .me a{
@@ -218,12 +247,12 @@ section{
 
 }
 .about .me p {
-    font-size: 2rem;
-    font-weight: 2rem;
-    padding: 0 7rem;
+    font-size: 1.8rem;
+    font-weight: 1.8rem;
+    padding: 1rem 7rem;
 }   
 
-.education{
+/* .education{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -241,7 +270,7 @@ section{
     border-radius: 2rem;
     width: 450px;
     height: 150px;
-}
+} */
 .projects{
     display: flex;
     flex-direction: column;
@@ -249,18 +278,7 @@ section{
     align-items: center;
     width: 100%;
 }
-.cards{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.projects h1{
-    font-size: 4rem;
-    font-weight: 4rem;
-}
+
 .pro-cards{
     background-color: white;
     margin:2rem;
@@ -273,6 +291,8 @@ section{
    display: flex;
    justify-content: start;
 }
+
+
 .skills{
     display: flex;
     flex-direction: column;
@@ -280,22 +300,45 @@ section{
     align-items: center;
     width: 100%;
 }
-.skills h1{
-    font-size: 4rem;
-    font-weight: 4rem;
-    padding: 2rem;
-}
-
-.icons{
+.skill-container{
+    margin: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    margin:2rem;
-    padding: 2rem;
-    border-radius: 2rem;
+    width: 100%;
 }
+.skill-container img{
+    height: 550px;
+    width: auto;    
+    margin: 0 auto;
+    border-radius: 4px;
+
+}
+.skill-list{
+    margin: 0 auto;
+}
+.skill-list ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 1rem 4rem;
+    list-style: none;
+}
+
+.skill-list ul li{
+    position: relative;
+    width: 100%;
+    outline: none;
+    text-align: center;
+}
+.skill-list ul li p{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+
 
 .contact{
     display: flex;
@@ -387,11 +430,10 @@ section{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
   }
-  .social a{
-      color: #202020;
-      font-size: 10rem;
-      margin: 2rem;
+  .social a img{
+    width: 150px;
+    padding: 0 1rem;
   }
   
