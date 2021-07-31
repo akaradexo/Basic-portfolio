@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *::-webkit-scrollbar {
     width: 8px;
@@ -56,15 +57,14 @@ body {
     position: fixed;
     width: 300px;
     height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: #d9d9d9;
+    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: width 0.5s;
-    border-right: 1px solid rgba(0, 0, 0, 0.05);
-    background-color: #d9d9d9;
-    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
-
+    transition: width 0.5s, left 0.5s;
 }
 .navigation.active{
     width: 0;
@@ -88,11 +88,12 @@ body {
     position: relative;
     display: block;
     width: 100%;
+    white-space: normal;
     display: flex;
-    color: #202020;   
-    text-decoration: none;
-    letter-spacing: 0.3rem;
     text-transform: uppercase;
+    text-decoration: none;
+    color: #202020;   
+    letter-spacing: 0.3rem;
     font-size: 2rem;
     font-weight: 2rem;
     opacity: 0.8;
@@ -117,31 +118,32 @@ body {
 
 .main.active{
     width: calc(100% - 0px);
-    left: 0;
+    left: 0px;
 }
 
-.topbar{
+.main .topbar{
     position: fixed;
     top: 0;
     width: calc(100% - 300px);
     left: 300px;
+    background-color: #d9d9d9;
+    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+    padding: 1rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
-    padding: 1rem 4rem;
+    z-index: 100000;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     transition: width 0.5s,left 0.5s;
-    background-color: #d9d9d9;
-    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+    
 }
 
-.topbar.active{
+.main .topbar.active{
     width: calc(100% - 0px);
-    left: 0;
+    left: 0px;
 }
 
-.topbar .logo{
+.main .topbar .logo{
     color: #202020;
     text-decoration: none;
     letter-spacing: 0.3rem;
@@ -151,7 +153,7 @@ body {
 }
 
 
-.topbar .toggle{
+.main .topbar .toggle{
     position: relative;
     font-size: 2rem;
     font-weight: bold;
@@ -174,31 +176,36 @@ section{
 }
 .content{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 .content .name{
     padding: 4rem;
-    line-height: 3rem;
 }
-.content .name a{
-    text-decoration: none;
-    cursor: pointer;
-   
-}
-.content .name h3{
+
+.content .name h1{
     font-size: 4rem;
     font-weight: 4rem;
+    line-height: 5rem;
+
 }
 .content .name p{
     font-size: 1.5rem;
     font-weight: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+}
+.content .name a{
+    text-decoration: none;
+    cursor: pointer;
 }
 .content img{
     width: 350px;
     height: 350px;
     border-radius: 350px;
+    margin: 2rem;
     box-shadow: 0px 0px 69px -10px rgb(0 0 0 / 75%);
 }
 
@@ -351,49 +358,38 @@ section{
 .contact h1{
     font-size: 4rem;
     font-weight: 4rem;
+    padding: 0 1rem;
 }
 
 
 .message{
-    display: flex;
+    display: flex ;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
 
   }
-
- 
-  
-  .thing{
+  .message .thing{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-self: flex-start;
+    align-items:flex-start;
+    justify-content: flex-start !important;
     padding:0 5rem ;
     width: 100%;
   }
   .thing h2{
     font-size: 2.3rem;
-    padding-bottom: 4rem;
   }
   .thing h3{
     padding-bottom: 1rem;
     font-size: 1.5rem;
   }
   .thing p{
-    padding-top: 1rem;
     font-size: 1.5rem;
-    color: white;
-    font-weight: 700;
+    font-weight: 400;
   }
-  .thing p a{
-    background-color: white;
-    border-radius: 20px;
-    padding: 0.5rem 1rem;
-    color: #202020;
-  
-  }
+
   form{
     display: flex;
     flex-direction: column;
@@ -410,7 +406,7 @@ section{
     border: 0.1111rem solid white;
     color: #202020;
     font-weight: 800;
-    width: 500px;
+    width: 400px;
   }
   button{
     padding: 0.3rem 2rem;
@@ -430,10 +426,96 @@ section{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
+    padding: 0 4rem;
   }
   .social a img{
     width: 150px;
     padding: 0 1rem;
   }
   
+
+/* media queries */
+
+@media only screen and (max-width: 1046px) {
+    .navigation{
+        left: -100%;
+    }
+    .navigation.active{
+        left: 0;
+        width: 100%;
+    }
+    .navigation ul{
+        padding: 5rem;
+    }
+    .main{
+        width: 100%;
+        left: 0;
+    }
+    .main.active{
+        left: 100%;
+    }
+    .main .topbar{
+        width: 100%;
+        left: 0;
+    }
+    .content{
+        padding-top:10rem ;
+        flex-direction: column;
+        text-align: center;
+    }
+    .content img{
+        width: 300px;
+        height: 300px;
+        border-radius: 300px;
+        margin: 1rem;
+    }
+    .about .me p {
+        font-size: 1.4rem;
+        font-weight: 1.4rem;
+        padding: 1rem 3rem;
+    } 
+   
+    .message{
+        flex-direction: column;
+      }
+    
+}
+@media only screen and (max-width: 796px) {
+    .social{
+        flex-direction: column;
+        padding: 1rem ;
+      }
+      .social a img{
+        width: 150px;
+        padding: 1rem 1rem;
+      }
+}
+@media only screen and (max-width: 656px) {
+    .skill-container{
+        flex-direction: column;
+    }
+    .skill-container img{
+        height: auto;
+        width: 450px;    
+    }
+}
+@media only screen and (max-width: 450px) {
+    .skill-container img{
+        width: 350px;    
+    }
+}
+@media only screen and (max-width: 490px) {
+    input,textarea{
+        width: 300px;
+      }
+      .contact h1{
+        font-size: 3rem;
+        font-weight: 3rem;
+        padding: 0 1rem;
+    }
+    .message .thing{
+        padding:0 2rem ;
+      }
+}
+

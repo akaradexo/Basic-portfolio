@@ -1,17 +1,20 @@
             
 .container-2 {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 2rem;
 }
-/* #navigation{
+#navigation{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}           */
+    margin-right: 24px;
+    
+}          
 #carousel {
     flex: initial;
     display: block;
@@ -84,9 +87,7 @@
     padding: 48px;
 }
             
-#navigation {
-    margin-right: 24px;
-}
+
 
 [class^="label_"] {
     display: block;
@@ -119,4 +120,71 @@
      cursor: default;
      color: #fff;
      background-color: #222;
+}
+
+@media only screen and (max-width: 1350px) {
+    .container-2 {
+        flex-direction: column;
+    }
+    #navigation{
+        margin-right:0px;
+    } 
+    [class^="label_"] {
+        margin: 5px 4px;
+        width: 300px;
+    }         
+    #carousel {
+        width: 700px;
+        height: 450px;
+    }
+    .p-wrapper img{
+        width: 500px; 
+    }   
+}
+
+@media only screen and (max-width: 1046px) {
+    .container-2 {
+        flex-direction: column;
+    }
+    #navigation{
+        margin-right:0px;
+    } 
+    [class^="label_"] {
+        margin: 5px 4px;
+        width: 300px;
+    }         
+    #carousel {
+        width: 600px;
+        height: 350px;
+    }
+    .p-wrapper img{
+        width: 500px; 
+    }   
+}
+@media only screen and (max-width: 635px) {
+    #carousel {
+        width: 500px;
+        height: 350px;
+    }
+    .p-wrapper img{
+        width: 400px; 
+    } 
+}
+@media only screen and (max-width: 512px) {
+    #carousel {
+        width: 400px;
+        height: 350px;
+    }
+    .p-wrapper img{
+        width: 300px; 
+    } 
+}
+@media only screen and (max-width: 512px) {
+    #carousel {
+        width: 370px;
+        height: 350px;
+    }
+    .p-wrapper img{
+        width: 270px; 
+    } 
 }
