@@ -33,9 +33,9 @@ a{
 }
 body {
   font-family: 'Poppins', sans-serif;
-  
   margin: 0;
   color: #202020;
+  overflow-x: hidden;
 }
 .btn{
     padding: 0.3rem 0.4rem;
@@ -53,10 +53,10 @@ body {
     width: 100%;
 }
 
-.navigation{
+.nav{
     position: fixed;
     width: 300px;
-    height: 100%;
+    min-height: 100vh;
     border-right: 1px solid rgba(0, 0, 0, 0.05);
     background-color: #d9d9d9;
     background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
@@ -66,10 +66,11 @@ body {
     overflow: hidden;
     transition: width 0.5s, left 0.5s;
 }
-.navigation.active{
+.nav.active{
     width: 0;
+    
 }
-.navigation ul{
+.nav ul{
     position: relative;
     top: 0;
     left: 0;
@@ -78,13 +79,13 @@ body {
     list-style: none;
 }
 
-.navigation ul li{
+.nav ul li{
     position: relative;
     width: 100%;
     outline: none;
 }
 
-.navigation ul li a{
+.nav ul li a{
     position: relative;
     display: block;
     width: 100%;
@@ -99,10 +100,9 @@ body {
     opacity: 0.8;
 }
 
-.navigation ul li a:hover{
+.nav ul li a:hover{
     opacity: 1;
     font-weight: 500;
-
 }
 
 .main{
@@ -112,7 +112,7 @@ body {
     min-height: 100vh;
     transition: width 0.5s,left 0.5s;
     background-color: #d9d9d9;
-  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
 
 }
 
@@ -132,7 +132,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100000;
+    z-index: 10000;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     transition: width 0.5s,left 0.5s;
     
@@ -174,34 +174,34 @@ section{
     align-items: center;
     
 }
-.content{
+.banner{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-.content .name{
+.banner .name{
     padding: 4rem;
 }
 
-.content .name h1{
+.banner .name h1{
     font-size: 4rem;
     font-weight: 4rem;
     line-height: 5rem;
 
 }
-.content .name p{
+.banner .name p{
     font-size: 1.5rem;
     font-weight: 1.5rem;
     line-height: 2rem;
     padding-bottom: 1rem;
 }
-.content .name a{
+.banner .name a{
     text-decoration: none;
     cursor: pointer;
 }
-.content img{
+.banner img{
     width: 350px;
     height: 350px;
     border-radius: 350px;
@@ -437,15 +437,15 @@ section{
 
 /* media queries */
 
-@media only screen and (max-width: 1046px) {
-    .navigation{
+@media (max-width: 1046px) {
+    .nav{
         left: -100%;
     }
-    .navigation.active{
+    .nav.active{
         left: 0;
         width: 100%;
     }
-    .navigation ul{
+    .nav ul{
         padding: 5rem;
     }
     .main{
@@ -459,12 +459,12 @@ section{
         width: 100%;
         left: 0;
     }
-    .content{
+    .banner{
         padding-top:10rem ;
         flex-direction: column;
         text-align: center;
     }
-    .content img{
+    .banner img{
         width: 300px;
         height: 300px;
         border-radius: 300px;

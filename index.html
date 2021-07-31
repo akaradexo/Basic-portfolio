@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=-----------------, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,15 +14,15 @@
 </head>
 <body>
     <div class="container-1">
-        <div class="navigation">
+        <div class="nav">
             <ul>
-                <li><a href="#profile">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#profile" onclick="toggleMenu();">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu();">About</a></li>
                 <!-- <li><a href="#education">Education</a></li> -->
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#social">Socials</a></li>
+                <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
+                <li><a href="#skills" onclick="toggleMenu();">Skills</a></li>
+                <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+                <li><a href="#social" onclick="toggleMenu();">Socials</a></li>
             </ul>
         </div>
         <div class="main">
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <section class="profile" id="profile">
-                <div class="content">
+                <div class="banner">
                     <img src="./assests/profile.jpg" alt="">
                     <div class="name">
                         <h1>Ashutosh Karade</h1>
