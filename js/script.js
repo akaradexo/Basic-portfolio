@@ -9,12 +9,11 @@ toggle.onclick = function(){
     main.classList.toggle('active');
 }
 function toggleMenu(){
-   
-    document.getElementById("nav").classList.remove("active");
-    document.getElementById("main").classList.remove("active");
-   
-    // nav.classList.remove('active');
-    // main.classList.remove('active');
+    
+    let nav = document.querySelector(".nav");
+    let main = document.querySelector('.main');
+    nav.classList.remove('active');
+    main.classList.remove('active');
 }
 
 
