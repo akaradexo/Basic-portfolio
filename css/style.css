@@ -416,6 +416,9 @@ section{
         flex-direction: column;
         text-align: center;
     }
+    .banner .name{
+        padding: 3rem 4rem;
+    }
     .banner img{
         width: 300px;
         height: 300px;
