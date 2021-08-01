@@ -48,51 +48,36 @@ body {
 .btn:hover{
     opacity: 0.8;
 }
-.container-1{
-    position: relative;
-    width: 100%;
-}
-
-.nav{
+/* -- */
+header{
     position: fixed;
-    width: 300px;
-    min-height: 100vh;
-    border-right: 1px solid rgba(0, 0, 0, 0.05);
-    background-color: #d9d9d9;
-    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+    top:0; 
+    left:0;
+    z-index: 1000;
+    height:100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    overflow: hidden;
-    transition: width 0.5s, left 0.5s;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    background-color: #d9d9d9;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
 }
-.nav.active{
-    width: 0;
-    
-}
-.nav ul{
-    position: relative;
-    top: 0;
-    left: 0;
+header .navbar{
     width:100%;
-    padding: 2rem 4rem;
+}
+
+header .navbar ul{
     list-style: none;
+    padding: 2rem 4rem;
+
 }
 
-.nav ul li{
-    position: relative;
-    width: 100%;
-    outline: none;
-}
-
-.nav ul li a{
-    position: relative;
+header .navbar ul li a{
     display: block;
-    width: 100%;
-    white-space: normal;
-    display: flex;
-    text-transform: uppercase;
-    text-decoration: none;
+    padding:1rem;
+    margin:1.5rem 0;
     color: #202020;   
     letter-spacing: 0.3rem;
     font-size: 2rem;
@@ -100,15 +85,27 @@ body {
     opacity: 0.8;
 }
 
-.nav ul li a:hover{
-    opacity: 1;
-    font-weight: 500;
+header .navbar ul li a:hover{
+        opacity: 1;
+        font-weight: 500;
 }
 
+#menu{
+    position: fixed;
+    top:2rem; right:2rem;
+    background:#333;
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+    border-radius: 20%;
+
+}
 .main{
     position: absolute;
-    width: calc(100% - 300px);
-    left: 300px;
+    left: 280px;
     min-height: 100vh;
     transition: width 0.5s,left 0.5s;
     background-color: #d9d9d9;
@@ -116,52 +113,6 @@ body {
 
 }
 
-.main.active{
-    width: calc(100% - 0px);
-    left: 0px;
-}
-
-.main .topbar{
-    position: fixed;
-    top: 0;
-    width: calc(100% - 300px);
-    left: 300px;
-    background-color: #d9d9d9;
-    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
-    padding: 1rem 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10000;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    transition: width 0.5s,left 0.5s;
-    
-}
-
-.main .topbar.active{
-    width: calc(100% - 0px);
-    left: 0px;
-}
-
-.main .topbar .logo{
-    color: #202020;
-    text-decoration: none;
-    letter-spacing: 0.3rem;
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-
-.main .topbar .toggle{
-    position: relative;
-    font-size: 2rem;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}   
 
 section{
     position: relative;
@@ -443,27 +394,22 @@ section{
 /* media queries */
 
 @media (max-width: 1046px) {
-    .nav{
-        left: -100%;
+    header{
+        left:-120%;
     }
-    .nav.active{
-        left: 0;
-        width: 100%;
+ 
+    #menu{
+        display: block;
     }
-    .nav ul{
-        padding: 5rem;
+ 
+    header.toggle{
+     left:0%;
     }
     .main{
         width: 100%;
         left: 0;
     }
-    .main.active{
-        left: 100%;
-    }
-    .main .topbar{
-        width: 100%;
-        left: 0;
-    }
+    
     .banner{
         padding-top:10rem ;
         flex-direction: column;
